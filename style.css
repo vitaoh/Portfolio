@@ -59,7 +59,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     flex: 1;
-    /* Faz o main ocupar o espaço restante disponível */
 }
 
 .sec1 {
@@ -104,6 +103,21 @@ main {
     transform: scale(1.1);
 }
 
+.sec {
+    align-content: center;
+    text-align: center;
+}
+
+.appleph {
+    max-width: 400px;
+    border-radius: 5%;
+    transition: transform 0.4s ease;
+}
+
+.appleph:hover {
+    transform: scale(1.1);
+}
+
 .tabela {
     border-radius: 10px;
     border: 1px solid #444;
@@ -127,7 +141,8 @@ main {
 
 .insta,
 .gith,
-.twitter {
+.twitter,
+.linkedin {
     width: 50px;
     transition-duration: 0.5s;
     margin: 5px;
@@ -135,12 +150,14 @@ main {
 
 .insta:hover,
 .gith:hover,
-.twitter:hover {
-    transform: scale(1.15);
+.twitter:hover,
+.linkedin:hover {
+    transform: translateY(-8px);
 }
 
 .ull,
-.ulll {
+.ulll,
+.ul1 {
     margin: 0;
     padding: 10px;
     list-style: none;
@@ -256,12 +273,13 @@ footer p {
     }
 
     .container {
-        flex-direction: column;
+        flex: 1 0 140px;
     }
 
     .meph {
         width: 150px;
     }
+
 
     footer {
         font-size: smaller;
@@ -278,7 +296,9 @@ footer p {
         padding: 8px;
     }
 
-    .meph {
+    .meph, 
+    .appleph,
+    .video {
         width: 200px;
     }
 

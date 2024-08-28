@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Victor</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .breadcrumb li {
+            margin: 0 5px;
+        }
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #111;
+        }
+        .breadcrumb li::after {
+            content: "-";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+    </style>
 </head>
 
 <body>
@@ -13,17 +34,19 @@
         <h1>Victor Rodrigues Herculini</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="dream.html">Sonho</a></li>
-            <li><a href="contact.html">Contato</a></li>
-        </ul>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="dream.html">Sonho</a></li>
+                <li><a href="contact.html" style="color: white;">Contato</a></li>
+            </ul>
+        </nav>
     </nav>
     <main>
         <section class="contact">
             <h2>Contato</h2>
-            <form action="send_contact.php" method="POST" enctype="multipart/form-data">
+            <form action="blablabla.bla" method="POST" enctype="multipart/form-data">
                 <fieldset>
                     <legend>Formulário de Contato</legend>
 

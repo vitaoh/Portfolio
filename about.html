@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre | Victor</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .breadcrumb li {
+            margin: 0 5px;
+        }
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #111;
+        }
+        .breadcrumb li::after {
+            content: "-";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+    </style>
 </head>
 
 <body>
@@ -13,19 +34,38 @@
         <h1>Victor Rodrigues Herculini</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="dream.html">Sonho</a></li>
-            <li><a href="contact.html">Contato</a></li>
-        </ul>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" style="color: white;">Sobre</a></li>
+                <li><a href="dream.html">Sonho</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
     </nav>
     <main>
         <section class="about">
             <h2>Sobre Mim</h2>
-            <p>Olá! Sou Victor Rodrigues Herculini, um entusiasta da tecnologia e da inovação. Estudo Análise e Desenvolvimento de Sistemas no IFSP Araraquara e tenho uma grande paixão por engenharia de software.</p>
-            <p>Meu interesse por tecnologia começou desde cedo e, ao longo dos anos, desenvolvi habilidades em várias áreas da programação. Estou sempre buscando aprender mais e explorar novas tecnologias para aplicar em projetos interessantes.</p>
-            <p>Quando não estou programando, gosto de passar tempo com amigos, explorar novas tendências tecnológicas e contribuir para projetos de código aberto.</p>
+            <p>Olá! Sou Victor Rodrigues Herculini, um entusiasta da tecnologia e da inovação. Estudo Análise e
+                Desenvolvimento de Sistemas no IFSP Araraquara e tenho uma grande paixão por engenharia de software.</p>
+            <p>Meu interesse por tecnologia começou desde cedo e, ao longo dos anos, desenvolvi habilidades em várias
+                áreas da tecnologia. Estou sempre buscando aprender mais e explorar novas tecnologias para aplicar em
+                em meus aprendizados.</p>
+            <p>Quando não estou programando, gosto de passar tempo vendo serie, jogando ou treinando o corpo, mas também
+                sempre foi importante a conectividade entre as pessoas, assim como saindo e me divertindo com os amigos.
+            </p>
+        </section>
+        <br>
+        <section class="container">
+            <section class="datanasc">
+                <p>Data de Nascimento: 12/08/2005</p>
+            </section>
+            <section class="estudo">
+                <p>Estudo: <br> IFSP Araraquara <br> ADS</p>
+            </section>
+            <section class="endereco">
+                <p>Endereço: <br> Sao Carlos (SP) <br> Planalto Paraiso </p>
+            </section>
         </section>
     </main>
 

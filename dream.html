@@ -6,6 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonho | Victor</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .breadcrumb li {
+            margin: 0 5px;
+        }
+
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        .breadcrumb li::after {
+            content: "-";
+            margin-left: 5px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .video {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 560px;
+            height: 315px;
+        }
+
+        @media (max-width: 480px) {
+            .video {
+                width: 280px;
+                height: 157px;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -13,21 +53,40 @@
         <h1>Victor Rodrigues Herculini</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="dream.html">Sonho</a></li>
-            <li><a href="contact.html">Contato</a></li>
-        </ul>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="dream.html" style="color: white;">Sonho</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+        </nav>
     </nav>
     <main>
-        <section class="dream">
-            <h2>Meu Sonho</h2>
-            <p>Desde que comecei a minha jornada na programação, meu grande sonho tem sido trabalhar como engenheiro de software para uma rede social inovadora. Acredito que as redes sociais têm um potencial incrível para conectar pessoas e criar comunidades significativas.</p>
-            <p>Meu objetivo é contribuir para o desenvolvimento de plataformas que ofereçam experiências enriquecedoras e seguras para seus usuários. Estou particularmente interessado em trabalhar com tecnologias emergentes e desenvolver soluções que possam fazer uma diferença real no mundo digital.</p>
+        <article>
+            <section class="dream">
+                <h2>Meu Sonho</h2>
+                <p>Desde que comecei a minha jornada na programação, meu grande sonho tem sido trabalhar como engenheiro
+                    de software para uma rede social inovadora. Acredito que as redes sociais têm um potencial incrível
+                    para conectar pessoas e criar comunidades significativas.</p>
+                <p>Meu objetivo é contribuir para o desenvolvimento de plataformas que ofereçam experiências
+                    enriquecedoras e seguras para seus usuários. Estou particularmente interessado em trabalhar com
+                    tecnologias emergentes e desenvolver soluções que possam fazer uma diferença real no mundo digital.
+                </p>
+            </section>
+        </article>
+        <br>
+        <section class="sec">
+            <img src="https://macmagazine.com.br/wp-content/uploads/2018/11/01-apple_park.jpg" alt="" class="appleph">
+        </section>
+        <br><br><br>
+        <h4 style="text-align: center">Vídeo sobre a vida de um engenheiro de software</h4>
+        <br>
+        <section style="text-align: center">
+            <iframe class="video" src="https://www.youtube.com/embed/aTHBJwVgu3I" frameborder="0"
+                allowfullscreen></iframe>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 Portfólio | Victor</p>
     </footer>

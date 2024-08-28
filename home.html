@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Victor</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .breadcrumb {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .breadcrumb li {
+            margin: 0 5px;
+        }
+        .breadcrumb li a {
+            text-decoration: none;
+            color: #111;
+        }
+        .breadcrumb li::after {
+            content: "-";
+            margin-left: 5px;
+        }
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Victor Rodrigues Herculini</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="home.html">Home</a></li>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li><a href="home.html" style="color: white;">Home</a></li>
             <li><a href="about.html">Sobre</a></li>
             <li><a href="dream.html">Sonho</a></li>
             <li><a href="contact.html">Contato</a></li>
@@ -29,9 +50,7 @@
                 <section class="telefone">
                     <p>Telefone: <br> (16)997858363</p>
                 </section>
-                <section class="endereco">
-                    <p>Endereço: <br> Sao Carlos (SP) <br> Planalto Paraiso </p>
-                </section>
+               
                 <section class="redessociais">
                     <p>Redes sociais:</p>
                     <a href="https://www.instagram.com/victorherculini/" target="_blank"><img class="insta"
@@ -42,12 +61,7 @@
                     <a href="https://twitter.com/vitaorh" target="_blank"><img class="twitter"
                             src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-logo-icon.png"
                             alt=""></a>
-                </section>
-                <section class="datanasc">
-                    <p>Data de Nascimento: 12/08/2005</p>
-                </section>
-                <section class="estudo">
-                    <p>Estudo: <br> IFSP Araraquara <br> ADS</p>
+                    <a href="https://www.linkedin.com/in/victorherculini/"><img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" class="linkedin" alt=""></a>
                 </section>
             </section>
             <section class="sec">
@@ -71,15 +85,17 @@
                     <td>Fazer</td>
                     <td>Tempo para estudo</td>
                     <tr>
-                        <td></td>
+                        <td>Trabalhar em grupo</td>
                         <td>Criativo</td>
                         <td></td>
                     </tr>
                 </tbody>
             </table>
             <br><br>
-            <ul class="ull">Profissão dos sonho: Engenheiro De Software (de uma rede social)</ul>
-            <ul class="ulll">Curiosidade: Obcecado pelo progresso</ul>
+            
+            <ul class="ul1"> <li class="ull">Profissão dos sonho: Engenheiro De Software (de uma rede social)</li>
+                <br>
+             <li class="ulll">Curiosidade: Obcecado pelo progresso</li></ul>
         </section>
     </main>
     <footer>

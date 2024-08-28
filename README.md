@@ -1,0 +1,2 @@
+Primeiramente a pessoa vai acessar home.html como link principal e vai ver as principais detalhes sobre mim. 
+E depois ela seguira em ordem como descrito na navegacao (sobre) / (sonho) / e por fim vai chegar no contato caso queira entrar em contato de alguma forma sem ser pelas redes socias.
