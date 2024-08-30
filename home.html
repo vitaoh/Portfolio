@@ -12,19 +12,29 @@
             padding: 0;
             display: flex;
         }
+
         .breadcrumb li {
             margin: 0 5px;
         }
+
         .breadcrumb li a {
             text-decoration: none;
             color: #111;
         }
+
         .breadcrumb li::after {
-            content: "-";
+            content: "|";
             margin-left: 5px;
         }
+
         .breadcrumb li:last-child::after {
             content: "";
+        }
+
+        @media (max-width: 768px) {
+            .breadcrumb li::after {
+                content: "";
+            }
         }
     </style>
 </head>
@@ -50,7 +60,7 @@
                 <section class="telefone">
                     <p>Telefone: <br> (16)997858363</p>
                 </section>
-               
+
                 <section class="redessociais">
                     <p>Redes sociais:</p>
                     <a href="https://www.instagram.com/victorherculini/" target="_blank"><img class="insta"
@@ -61,7 +71,9 @@
                     <a href="https://twitter.com/vitaorh" target="_blank"><img class="twitter"
                             src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-logo-icon.png"
                             alt=""></a>
-                    <a href="https://www.linkedin.com/in/victorherculini/"><img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" class="linkedin" alt=""></a>
+                    <a href="https://www.linkedin.com/in/victor-herculini/"><img
+                            src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png"
+                            class="linkedin" alt=""></a>
                 </section>
             </section>
             <section class="sec">
@@ -92,10 +104,12 @@
                 </tbody>
             </table>
             <br><br>
-            
-            <ul class="ul1"> <li class="ull">Profissão dos sonho: Engenheiro De Software (de uma rede social)</li>
+
+            <ul class="ul1">
+                <li class="ull">Profissão dos sonho: Engenheiro De Software (de uma rede social)</li>
                 <br>
-             <li class="ulll">Curiosidade: Obcecado pelo progresso</li></ul>
+                <li class="ulll">Curiosidade: Obcecado pelo progresso</li>
+            </ul>
         </section>
     </main>
     <footer>

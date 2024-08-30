@@ -23,7 +23,7 @@
         }
 
         .breadcrumb li::after {
-            content: "-";
+            content: "|";
             margin-left: 5px;
         }
 
@@ -36,6 +36,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             width: 560px;
             height: 315px;
+        }
+
+        @media (max-width: 768px) {
+            .breadcrumb li::after {
+                content: "";
+            }
         }
 
         @media (max-width: 480px) {
@@ -83,8 +89,7 @@
         <h4 style="text-align: center">Vídeo sobre a vida de um engenheiro de software</h4>
         <br>
         <section style="text-align: center">
-            <iframe class="video" src="https://www.youtube.com/embed/aTHBJwVgu3I" frameborder="0"
-                allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/aTHBJwVgu3I" frameborder="0" allowfullscreen></iframe>
         </section>
     </main>
     <footer>

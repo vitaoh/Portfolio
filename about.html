@@ -12,19 +12,29 @@
             padding: 0;
             display: flex;
         }
+
         .breadcrumb li {
             margin: 0 5px;
         }
+
         .breadcrumb li a {
             text-decoration: none;
             color: #111;
         }
+
         .breadcrumb li::after {
-            content: "-";
+            content: "|";
             margin-left: 5px;
         }
+
         .breadcrumb li:last-child::after {
             content: "";
+        }
+
+        @media (max-width: 768px) {
+            .breadcrumb li::after {
+                content: "";
+            }
         }
     </style>
 </head>
