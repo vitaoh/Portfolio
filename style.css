@@ -914,9 +914,18 @@ body {
   animation: pulse 2s ease-in-out infinite;
 }
 
+.picture-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .avatar-placeholder {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--color-primary), var(--color-teal-300));
   display: flex;
