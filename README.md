@@ -1,4 +1,4 @@
-# Portfolio Pessoal - Victor Rodrigues Herculini
+# Portfolio Pessoal - Victor Herculini
 
 Este é o repositório do meu portfólio pessoal, onde apresento minhas principais informações, habilidades e projetos. O site é disponibilizado no arquivo `home.html` e segue uma navegação simples e direta para facilitar a experiência do visitante.
 
