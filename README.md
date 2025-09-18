@@ -72,9 +72,3 @@ Este repositório é pessoal, mas sugestões de melhoria são bem-vindas via Pul
 ---
 
 **Obrigado por visitar meu portfólio!** ⭐
-
----
-
-![HTML](https://img.shields.io/badge/HTML-28.7%25-orange)
-![CSS](https://img.shields.io/badge/CSS-49.1%25-blue) 
-![JavaScript](https://img.shields.io/badge/JavaScript-22.2%25-yellow)
